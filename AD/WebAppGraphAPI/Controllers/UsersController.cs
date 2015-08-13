@@ -33,6 +33,11 @@ namespace WebAppGraphAPI.Controllers
             {
                 ActiveDirectoryClient client = AuthenticationHelper.GetActiveDirectoryClient();
                 IPagedCollection<IUser> pagedCollection = await client.Users.ExecuteAsync();
+
+                IPagedCollection<ISubscribedSku> result =  client.SubscribedSkus.ExecuteAsync().Result;
+                
+             
+
                 if (pagedCollection != null)
                 {
                     do

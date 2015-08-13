@@ -50,7 +50,7 @@ namespace WebAppGraphAPI
                 {
                     
                     ClientId = clientId,
-                    Authority = Authority,
+                    Authority = Authority, 
                     PostLogoutRedirectUri = postLogoutRedirectUri,
 
                     Notifications = new OpenIdConnectAuthenticationNotifications()
